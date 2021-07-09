@@ -34,7 +34,7 @@ int hitungHargaBayar(){
  }
 }
 
-public class Object {
+public class Object_ezy {
     public static void main(String[] args) {
         barang barang1 = new barang();
         barang1.nama = "Makaroni";
