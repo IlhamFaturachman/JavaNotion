@@ -31,7 +31,7 @@ int hitungHargaBayar(){
     hargaBayar = total - diskon;
     System.out.println("Harga yang harus dibayar : " + hargaBayar);
     return hargaBayar;
- }
+    }
 }
 
 public class Object_ezy {
