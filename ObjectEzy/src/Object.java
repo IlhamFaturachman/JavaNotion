@@ -34,7 +34,7 @@ int hitungHargaBayar(){
  }
 }
 
-public class App {
+public class Object {
     public static void main(String[] args) {
         barang barang1 = new barang();
         barang1.nama = "Makaroni";
