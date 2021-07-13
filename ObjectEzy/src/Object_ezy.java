@@ -6,7 +6,16 @@ class barang{
     int diskon;
     int hargaBayar;
 
-int hitungHargaTotal(int jumlah, int hargaSatuan){
+    barang(String nama, int hargaSatuan, int jumlah){
+        this.nama = nama;
+        this.hargaSatuan = hargaSatuan;
+        this.jumlah = jumlah;
+        System.out.println("Nama Barang : " + this.nama);
+        System.out.println("Satuan Barang : " + this.hargaSatuan);
+        System.out.println("Jumlah Barang : " + this.jumlah);
+    }
+
+int hitungHargaTotal(){
     total = hargaSatuan * jumlah;
     System.out.println("Total Harga : " + total);
     return total;
@@ -36,35 +45,23 @@ int hitungHargaBayar(){
 
 public class Object_ezy {
     public static void main(String[] args) {
-        barang barang1 = new barang();
-        barang1.nama = "Makaroni";
-        barang1.jumlah = 10;
-        barang1.hargaSatuan = 12000;
-        System.out.println("Nama Barang : " + barang1.nama);
-        barang1.hitungHargaTotal(barang1.jumlah, barang1.hargaSatuan);
+        barang barang1 = new barang("Makaroni", 10, 12000);
+        barang1.hitungHargaTotal();
         barang1.hitungHargaDiskon();
         barang1.hitungHargaBayar();
 
         System.out.println("<------------------------>");
 
-        barang barang2 = new barang();
-        barang2.nama = "Kripca";
-        barang2.jumlah = 10;
-        barang2.hargaSatuan = 6500;
-        System.out.println("Nama Barang : " + barang2.nama);
-        barang2.hitungHargaTotal(barang2.jumlah, barang2.hargaSatuan);
+        barang barang2 = new barang("Kripca", 10, 6500);
+        barang2.hitungHargaTotal();
         barang2.hitungHargaDiskon();
         barang2.hitungHargaBayar();
 
 
         System.out.println("<------------------------>");
 
-        barang barang3 = new barang();
-        barang3.nama = "Kripca";
-        barang3.jumlah = 7;
-        barang3.hargaSatuan = 5000;
-        System.out.println("Nama Barang : " + barang3.nama);
-        barang3.hitungHargaTotal(barang3.jumlah, barang3.hargaSatuan);
+        barang barang3 = new barang("Mie Gelas", 10, 4500);
+        barang3.hitungHargaTotal();
         barang3.hitungHargaDiskon();
         barang3.hitungHargaBayar();
 
